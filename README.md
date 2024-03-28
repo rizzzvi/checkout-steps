@@ -2,7 +2,7 @@
 This is a simple visual representation of all the steps you need to follow to implement checkout payment gateway.
 
 Apple Pay or Google Pay:
-Here are the steps for Apple/Google Pay checkout. First, you need to configure Apple/Google Pay configurations, which is required by  Flutter Pay package. This package opens a bottom sheet for you, where your cards are selectable for authentication using Face ID or fingerprint. Then, the bottom sheet returns a token to you, which you need to convert to Base64 and send to the checkout. Checkout returns a new token.  Along with your amount and channel you need to send this token to your backend.  What will the backend do? It will take all these things and request checkout again. If the response is successful, your payment will be successfully completed.
+Here are the steps for Apple/Google Pay checkout. First, you need to configure Apple/Google Pay configurations, which is required by  Flutter Pay package. This package opens a bottom sheet for you, where your cards are selectable for authentication using Face ID or fingerprint. Then, the bottom sheet returns a token to you, which you need to convert to Base64 ( only for apple pay ) and send to the checkout. Checkout returns a new token.  Along with your amount and channel you need to send this token to your backend.  What will the backend do? It will take all these things and request checkout again. If the response is successful, your payment will be successfully completed.
 
 Credit card:
 Credit card payment through checkout can be done through two flows:
